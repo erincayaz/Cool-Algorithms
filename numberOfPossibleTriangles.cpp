@@ -5,7 +5,7 @@ int find(int n, vector <int> arr) {
     int k = i + 2;
     
     for(int j = i + 1; j < n; j++) {
-      while(k < j && (arr[i] + arr[j] > arr[k]))
+      while(k < n && (arr[i] + arr[j] > arr[k]))
         k++;
        
        if(k > j)
